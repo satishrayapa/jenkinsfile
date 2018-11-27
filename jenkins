@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+    stages {
+        stage ('tag') {
+            steps {
+                git 'https://github.com/satishrayapa/devops7.git'
+            }
+            
+        }
+    }
+}
