@@ -1,7 +1,7 @@
 def var1 = choice(name: 'CHOICE', choices: ['master', 'node25'], description: 'Pick something')
 
 pipeline {
-    agent { label '${params.var1}' }
+    agent { label "${params.var1}" }
     stages {
         stage ('tag') {
             steps {
