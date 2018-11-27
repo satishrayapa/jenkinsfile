@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage ('tag') {
             steps {
+	        echo 'hello world'
                 git 'https://github.com/satishrayapa/devops7.git'
             }
             
